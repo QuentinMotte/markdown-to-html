@@ -3,7 +3,7 @@
 _Life is like riding a bicycle. To keep your balance, you must keep moving._  
 _Albert Einstein_
 
-![alt text](./images/photo-quentin.jpg)
+![alt imgquentin](./images/photo-quentin.jpg)
 
 ---
 
