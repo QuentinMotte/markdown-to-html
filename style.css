@@ -170,7 +170,7 @@ span {
     border-radius: 5px;
 }
 /* -----------Responsive--------------- */
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1160px) {
     main {
         display: flex;
         flex-direction: column;
