@@ -7,7 +7,7 @@
     color: rgb(46, 223, 140);
 }
 body {
-    background: url(./images/pexels-rakicevic-nenad-1274260.jpg) bottom/cover
+    background: url(./images/pexels-rakicevic-nenad-1274260.jpg) center/cover
         fixed;
 }
 h2 {
@@ -77,10 +77,11 @@ main {
 }
 .first-part-main {
     display: flex;
-    /* justify-content: space-around; */
+    align-items: center;
 }
 table {
-    margin-right: 50px;
+    margin-right: 100px;
+    margin-left: 100px;
     padding: 15px;
     height: 370px;
     box-shadow: 1px 0px 12px 4px rgba(46, 223, 140, 0.308);
@@ -102,6 +103,7 @@ th {
 ul {
     line-height: 30px;
     list-style-type: circle;
+    font-weight: 600;
 }
 
 .second-part-main {
@@ -116,7 +118,7 @@ ul {
 .funny-story::before {
     content: "";
     position: absolute;
-    width: 30px;
+    width: 80px;
     height: 15px;
     background: rgb(46, 223, 140);
     border: 1px solid rgb(46, 223, 140);
@@ -128,7 +130,7 @@ ul {
 .funny-story::after {
     content: "";
     position: absolute;
-    width: 200px;
+    width: 130px;
     height: 15px;
     border: 1px solid rgb(46, 223, 140);
     border-left: none;
@@ -166,4 +168,25 @@ span {
     width: 5px;
     background: rgb(46, 223, 140);
     border-radius: 5px;
+}
+/* -----------Responsive--------------- */
+@media screen and (max-width: 1050px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    .first-part-main {
+        align-items: center;
+        justify-content: center;
+    }
+    .second-part-main {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .funny-story::after {
+        bottom: 30px;
+        right: 50px;
+    }
 }
