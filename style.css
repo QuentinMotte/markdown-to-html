@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+    /* padding: 0; */
+    margin: 0;
+    color: rgb(46, 223, 140);
+}
+body {
+    background: url(./images/pexels-rakicevic-nenad-1274260.jpg) bottom/cover
+        fixed;
+}
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: aliceblue;
+}
+/* ---------------------HEADER -------------------- */
+header {
+    text-align: center;
+}
+header h1 {
+    margin: 50px auto 20px;
+    width: 400px;
+    font-size: 2.5rem;
+    border: 1px solid;
+    box-shadow: 1px 3px 7px 3px rgba(54, 236, 151, 0.384);
+    border-radius: 5px;
+    transition: 0.25s;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 1px 2px 20px;
+}
+header h1:hover {
+    transform: scale(1.1);
+    background: rgb(131, 236, 187);
+    color: aliceblue;
+}
+.quote {
+    margin: 10px auto 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+header img {
+    width: 260px;
+    height: 280px;
+    border-radius: 50%;
+}
+header h2 {
+    position: relative;
+}
+header h2::after {
+    content: "";
+    position: absolute;
+    background: rgb(46, 223, 140);
+    height: 1px;
+    width: 80%;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    animation: h1anim 6s ease-in-out forwards;
+    transform-origin: center;
+}
+
+/************* ANIMATION DE LA BARRE APRES LE HEADER  ******************/
+
+@keyframes h1anim {
+    100% {
+        transform: translateX(-50%) scaleX(1);
+    }
+}
+/* ----------------Premiere section main --> table & hobbies-------------- */
+main {
+    display: flex;
+    justify-content: space-around;
+    margin: 80px auto;
+}
+.first-part-main {
+    display: flex;
+    /* justify-content: space-around; */
+}
+table {
+    margin-right: 50px;
+    padding: 15px;
+    height: 370px;
+    box-shadow: 1px 0px 12px 4px rgba(46, 223, 140, 0.308);
+}
+td,
+th,
+table {
+    border: solid 4px;
+    border-radius: 5px;
+    font-weight: 800;
+    padding: 5px;
+}
+th {
+    border: rgb(46, 223, 140);
+    padding: 12px;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+ul {
+    line-height: 30px;
+    list-style-type: circle;
+}
+
+.second-part-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.funny-story {
+    padding-bottom: 70px;
+    position: relative;
+}
+.funny-story::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 15px;
+    background: rgb(46, 223, 140);
+    border: 1px solid rgb(46, 223, 140);
+    bottom: 30px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    animation: loading 5s linear infinite;
+}
+.funny-story::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 15px;
+    border: 1px solid rgb(46, 223, 140);
+    border-left: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    bottom: 30px;
+    right: 350px;
+}
+@keyframes loading {
+    100% {
+        width: 150px;
+    }
+}
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -20px;
+    text-transform: uppercase;
+}
+a,
+p {
+    text-decoration: none;
+    padding: 10px;
+}
+.link p {
+    color: aliceblue;
+}
+a:hover {
+    transform: scale(1.1);
+    color: aliceblue;
+}
+span {
+    margin: 2px;
+    width: 5px;
+    background: rgb(46, 223, 140);
+    border-radius: 5px;
+}

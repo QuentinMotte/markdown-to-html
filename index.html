@@ -5,16 +5,24 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Markdown to html</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
     </head>
     <body>
         <header>
             <h1>Quentin Motte</h1>
-            <p class="quote">
-                <em
+            <blockquote class="quote">
+                <p><em
                     >Life is like riding a bicycle. To keep your balance, you
-                    must keep moving. <br />Albert Einstein.</em
+                    must keep moving.</p> <cite>Albert Einstein.</cite></em
                 >
-            </p>
+            </blockquote>
             <img
                 src="./images/photo-quentin.jpg"
                 alt="photo-quentin"
@@ -25,7 +33,7 @@
         <main>
             <section class="first-part-main">
                 <div class="table-information">
-                    <table border="solid">
+                    <table>
                         <thead>
                             <tr>
                                 <th colspan="2">About Me</th>
@@ -33,24 +41,22 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Birthday</td>
+                                <td>Birthday :</td>
                                 <td>05/02</td>
                             </tr>
                             <tr>
-                                <td>Favorite color</td>
+                                <td>Favorite color :</td>
                                 <td>Blue</td>
                             </tr>
                             <tr>
-                                <td>Favorite food</td>
+                                <td>Favorite food :</td>
                                 <td>Carbonara</td>
                             </tr>
                             <tr>
-                                <td>Pineapple on pizza</td>
+                                <td>Pineapple on pizza :</td>
                                 <td>
-                                    <input type="checkbox" id="yes" />
-                                    <label for="yes">Yes</label> <br />
-                                    <input type="checkbox" id="no" checked />
-                                    <label for="no">No</label>
+                                    <i class="fa-regular fa-square"> Yes</i><br>
+                                    <i class="fa-regular fa-square-check"> No</i>
                                 </td>
                             </tr>
                         </tbody>
